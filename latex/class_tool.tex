@@ -1,0 +1,152 @@
+\hypertarget{class_tool}{}\section{Tool Class Reference}
+\label{class_tool}\index{Tool@{Tool}}
+
+
+This class represents the tool and all of its states.  
+
+
+
+
+{\ttfamily \#include $<$Tool.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tool_a170ddbe1f4b8f32086ff1ce97ccd12c4}\label{class_tool_a170ddbe1f4b8f32086ff1ce97ccd12c4}} 
+void \mbox{\hyperlink{class_tool_a170ddbe1f4b8f32086ff1ce97ccd12c4}{init}} (const char $\ast$title, int x\+Coord, int y\+Coord, int width, int height, bool full\+Screen)
+\begin{DoxyCompactList}\small\item\em Initializes the game, creating a window and all other necessary pieces. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tool_ac6f94c15571c1b5cfe05f42d3c1f703a}{handle\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Handles user input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a6f7159be545ef8c26d9824372a651a34}\label{class_tool_a6f7159be545ef8c26d9824372a651a34}} 
+void \mbox{\hyperlink{class_tool_a6f7159be545ef8c26d9824372a651a34}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the game by updating the ball, bricks, and paddle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a04bf08cc9baa18d59ca96d7e099619a5}\label{class_tool_a04bf08cc9baa18d59ca96d7e099619a5}} 
+void \mbox{\hyperlink{class_tool_a04bf08cc9baa18d59ca96d7e099619a5}{render}} ()
+\begin{DoxyCompactList}\small\item\em Renders the game by rendering the ball, bricks, and paddle if unpaused or the correct menu while paused. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a72f31d307cede1c5b87d49f185f5dfad}\label{class_tool_a72f31d307cede1c5b87d49f185f5dfad}} 
+void \mbox{\hyperlink{class_tool_a72f31d307cede1c5b87d49f185f5dfad}{clean}} ()
+\begin{DoxyCompactList}\small\item\em Handles cleaning up the game after quitting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_ae3e327ea22b5280908a0250a31ec8066}\label{class_tool_ae3e327ea22b5280908a0250a31ec8066}} 
+void \mbox{\hyperlink{class_tool_ae3e327ea22b5280908a0250a31ec8066}{render\+Grid}} ()
+\begin{DoxyCompactList}\small\item\em Renders the grid background. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_ad30aa108027b7473a331826aebe400bc}\label{class_tool_ad30aa108027b7473a331826aebe400bc}} 
+void \mbox{\hyperlink{class_tool_ad30aa108027b7473a331826aebe400bc}{render\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Renders the render\+Box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_af169259746db4b9b0bc8b003db05bb0b}\label{class_tool_af169259746db4b9b0bc8b003db05bb0b}} 
+void \mbox{\hyperlink{class_tool_af169259746db4b9b0bc8b003db05bb0b}{render\+Opponents}} ()
+\begin{DoxyCompactList}\small\item\em Renders the opponents. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_aa71046861f2e29c7355fed760e1d52b3}\label{class_tool_aa71046861f2e29c7355fed760e1d52b3}} 
+void \mbox{\hyperlink{class_tool_aa71046861f2e29c7355fed760e1d52b3}{render\+Editor}} ()
+\begin{DoxyCompactList}\small\item\em Renders the editor mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_abf50e16bc87fed0a2dfeacd672812a32}\label{class_tool_abf50e16bc87fed0a2dfeacd672812a32}} 
+void \mbox{\hyperlink{class_tool_abf50e16bc87fed0a2dfeacd672812a32}{render\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Renders the main menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_ac20a79c6fc9e569b6d0655c0d5cf43a9}\label{class_tool_ac20a79c6fc9e569b6d0655c0d5cf43a9}} 
+void \mbox{\hyperlink{class_tool_ac20a79c6fc9e569b6d0655c0d5cf43a9}{update\+Game\+State}} ()
+\begin{DoxyCompactList}\small\item\em Updates all elements of the game state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a218adc106689c268c8309cd7b88cb49b}\label{class_tool_a218adc106689c268c8309cd7b88cb49b}} 
+void \mbox{\hyperlink{class_tool_a218adc106689c268c8309cd7b88cb49b}{render\+Game\+Stats}} ()
+\begin{DoxyCompactList}\small\item\em Renders the stats associated with the game at its current state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a8a4546fdf12c93890d65eb165efd1bbb}\label{class_tool_a8a4546fdf12c93890d65eb165efd1bbb}} 
+void \mbox{\hyperlink{class_tool_a8a4546fdf12c93890d65eb165efd1bbb}{render\+Game\+Summary}} ()
+\begin{DoxyCompactList}\small\item\em Renders the game summary after Game Over has occurred. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a12ea92129c694e8c81f31b0fb0e4ed2c}\label{class_tool_a12ea92129c694e8c81f31b0fb0e4ed2c}} 
+bool \mbox{\hyperlink{class_tool_a12ea92129c694e8c81f31b0fb0e4ed2c}{check\+Asteroid\+Collision}} (float oppX, float oppY)
+\begin{DoxyCompactList}\small\item\em Checks if the main character has collided with an asteroid at a given position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a1d546cc74d4411757cb122923a256bcf}\label{class_tool_a1d546cc74d4411757cb122923a256bcf}} 
+int \mbox{\hyperlink{class_tool_a1d546cc74d4411757cb122923a256bcf}{check\+Asteroid\+Click}} (int clickX, int clickY)
+\begin{DoxyCompactList}\small\item\em Checks if an astroid has been clicked on in the editor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tool_acbf777592bae41cf7a6ebcb9f03fbcef}\label{class_tool_acbf777592bae41cf7a6ebcb9f03fbcef}} 
+bool \mbox{\hyperlink{class_tool_acbf777592bae41cf7a6ebcb9f03fbcef}{is\+Running}}
+\begin{DoxyCompactList}\small\item\em Check if the game is running or paused. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a04dc76bc01dc69bb621c43d581c36fbc}\label{class_tool_a04dc76bc01dc69bb621c43d581c36fbc}} 
+bool \mbox{\hyperlink{class_tool_a04dc76bc01dc69bb621c43d581c36fbc}{is\+Spatial\+Visual}}
+\begin{DoxyCompactList}\small\item\em Check if the tool is in the demo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_abce4d9f93f923acb15f1aab0bd665822}\label{class_tool_abce4d9f93f923acb15f1aab0bd665822}} 
+bool \mbox{\hyperlink{class_tool_abce4d9f93f923acb15f1aab0bd665822}{is\+Editor}}
+\begin{DoxyCompactList}\small\item\em Check if the tool is in the editor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a7915b46d6b11dc4d24f2399775c9e91d}\label{class_tool_a7915b46d6b11dc4d24f2399775c9e91d}} 
+bool \mbox{\hyperlink{class_tool_a7915b46d6b11dc4d24f2399775c9e91d}{is\+Main\+Menu}} = true
+\begin{DoxyCompactList}\small\item\em Check if the tool is in the main menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a2bb2b23f192da67b340cf869a973b106}\label{class_tool_a2bb2b23f192da67b340cf869a973b106}} 
+bool \mbox{\hyperlink{class_tool_a2bb2b23f192da67b340cf869a973b106}{is\+Game\+Mode}}
+\begin{DoxyCompactList}\small\item\em Check if the tool is in game mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a0351df92aa63546f119fc20bcd682ebd}\label{class_tool_a0351df92aa63546f119fc20bcd682ebd}} 
+bool \mbox{\hyperlink{class_tool_a0351df92aa63546f119fc20bcd682ebd}{is\+High\+Score}} = false
+\begin{DoxyCompactList}\small\item\em Check if the game has acheived a new high score. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a7164f389cbeb55aa232dfd6a40b81ba7}\label{class_tool_a7164f389cbeb55aa232dfd6a40b81ba7}} 
+int \mbox{\hyperlink{class_tool_a7164f389cbeb55aa232dfd6a40b81ba7}{grid\+Count}} \mbox{[}N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+R\+O\+WS\mbox{]}\mbox{[}N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+C\+O\+L\+U\+M\+NS\mbox{]}
+\begin{DoxyCompactList}\small\item\em 2D int array that determines how many objects an in each index \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a7d048eeb0bcf93ba7f842a0ad29c112e}\label{class_tool_a7d048eeb0bcf93ba7f842a0ad29c112e}} 
+\mbox{\hyperlink{class_opponent}{Opponent}} $\ast$ \mbox{\hyperlink{class_tool_a7d048eeb0bcf93ba7f842a0ad29c112e}{opponents}} \mbox{[}P\+O\+O\+L\+\_\+\+S\+I\+ZE\mbox{]}
+\begin{DoxyCompactList}\small\item\em Object pool of Opponents for the duration of the \mbox{\hyperlink{class_tool}{Tool}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_acc20893dd60397557bc0936ea22b3363}\label{class_tool_acc20893dd60397557bc0936ea22b3363}} 
+bool \mbox{\hyperlink{class_tool_acc20893dd60397557bc0936ea22b3363}{has\+G\+O\+Sound\+Played}} = false
+\begin{DoxyCompactList}\small\item\em Determines if the Game Over sound has played after the game ends. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_af3c237726a88ae8e33e60d3d850ccfb6}\label{class_tool_af3c237726a88ae8e33e60d3d850ccfb6}} 
+bool \mbox{\hyperlink{class_tool_af3c237726a88ae8e33e60d3d850ccfb6}{is\+Game\+Over}} = false
+\begin{DoxyCompactList}\small\item\em Determines if the game is over. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a36e1087bb60c86e9585502155533ee6e}\label{class_tool_a36e1087bb60c86e9585502155533ee6e}} 
+bool \mbox{\hyperlink{class_tool_a36e1087bb60c86e9585502155533ee6e}{editing\+Asteroid}} = false
+\begin{DoxyCompactList}\small\item\em Determines if an asteroid\textquotesingle{}s location is being edited. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a8abcd0bcce41a26deedeaaf574212c47}\label{class_tool_a8abcd0bcce41a26deedeaaf574212c47}} 
+int \mbox{\hyperlink{class_tool_a8abcd0bcce41a26deedeaaf574212c47}{current\+Asteroid}} = -\/1
+\begin{DoxyCompactList}\small\item\em The index of the current asteroid being edited -- -\/1 if no asteroid is being edited. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_aba87b7078c3d7f622ab585b2c2c5047d}\label{class_tool_aba87b7078c3d7f622ab585b2c2c5047d}} 
+int \mbox{\hyperlink{class_tool_aba87b7078c3d7f622ab585b2c2c5047d}{frames\+Rendered}}
+\begin{DoxyCompactList}\small\item\em Number of frames rendereed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a4575eb3ae08c5f2b39da73d1d3c60779}\label{class_tool_a4575eb3ae08c5f2b39da73d1d3c60779}} 
+int \mbox{\hyperlink{class_tool_a4575eb3ae08c5f2b39da73d1d3c60779}{frames\+Per\+Second\+Int}}
+\begin{DoxyCompactList}\small\item\em Number of frames rendered per second. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a987e34a581fae97d5d885cd9f2ce5ba9}\label{class_tool_a987e34a581fae97d5d885cd9f2ce5ba9}} 
+double \mbox{\hyperlink{class_tool_a987e34a581fae97d5d885cd9f2ce5ba9}{lag}}
+\begin{DoxyCompactList}\small\item\em Lag that is needed to maintain 60 fps. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a56d0e09310d9effed0bf8c0e47a87309}\label{class_tool_a56d0e09310d9effed0bf8c0e47a87309}} 
+double \mbox{\hyperlink{class_tool_a56d0e09310d9effed0bf8c0e47a87309}{previous}}
+\begin{DoxyCompactList}\small\item\em Temp variable to assist with F\+PS Timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a9a5c6e99cfec23763839f77f4224b752}\label{class_tool_a9a5c6e99cfec23763839f77f4224b752}} 
+int \mbox{\hyperlink{class_tool_a9a5c6e99cfec23763839f77f4224b752}{score}} = 0
+\begin{DoxyCompactList}\small\item\em Current score of the game session. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_aec3c7c96cfc907809cc1ffa076e2a965}\label{class_tool_aec3c7c96cfc907809cc1ffa076e2a965}} 
+int \mbox{\hyperlink{class_tool_aec3c7c96cfc907809cc1ffa076e2a965}{high\+Score}} = 0
+\begin{DoxyCompactList}\small\item\em Current high score of the game session. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a79fcf89350a8deabf940bafc75063d60}\label{class_tool_a79fcf89350a8deabf940bafc75063d60}} 
+time\+\_\+t \mbox{\hyperlink{class_tool_a79fcf89350a8deabf940bafc75063d60}{start\+Time}}
+\begin{DoxyCompactList}\small\item\em Seconds timer to determine score for game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_a36820fb822fa1b229727302f1ec59009}\label{class_tool_a36820fb822fa1b229727302f1ec59009}} 
+double \mbox{\hyperlink{class_tool_a36820fb822fa1b229727302f1ec59009}{seconds\+\_\+since\+\_\+start}}
+\begin{DoxyCompactList}\small\item\em Temp variable to assist with score during game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents the tool and all of its states. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tool_ac6f94c15571c1b5cfe05f42d3c1f703a}\label{class_tool_ac6f94c15571c1b5cfe05f42d3c1f703a}} 
+\index{Tool@{Tool}!handleEvents@{handleEvents}}
+\index{handleEvents@{handleEvents}!Tool@{Tool}}
+\subsubsection{\texorpdfstring{handleEvents()}{handleEvents()}}
+{\footnotesize\ttfamily void Tool\+::handle\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles user input. 
+
+Left\+Arrow\+Key -\/ move character left ~\newline
+Right\+Arrow\+Key -\/ move character right ~\newline
+Up\+Arrow\+Key -\/ move character Up ~\newline
+Down\+Arrow\+Key -\/ move character down ~\newline
+Q -\/ quit out of the game ~\newline
+Click-\/\+Down -\/ start to edit a specific asteroid\textquotesingle{}s location~\newline
+Click-\/\+Up -\/ finish editing a specific asteroid\textquotesingle{}s location~\newline
+B -\/ return to main menu from any screen~\newline
+D -\/ enter demo mode~\newline
+E -\/ enter editor mode~\newline
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tool.\+h\end{DoxyCompactItemize}

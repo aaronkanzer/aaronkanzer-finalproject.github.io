@@ -1,0 +1,85 @@
+\hypertarget{class_opponent}{}\section{Opponent Class Reference}
+\label{class_opponent}\index{Opponent@{Opponent}}
+
+
+This class represents what would be the opponents or other characters in a game.  
+
+
+
+
+{\ttfamily \#include $<$Opponent.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_opponent_ac93281c163a0a7e4767f25b96e3820c3}\label{class_opponent_ac93281c163a0a7e4767f25b96e3820c3}} 
+void \mbox{\hyperlink{class_opponent_ac93281c163a0a7e4767f25b96e3820c3}{render}} (S\+D\+L\+\_\+\+Renderer $\ast$renderer, float x\+Location, float y\+Location)
+\begin{DoxyCompactList}\small\item\em Renders each opponent in a given x-\/coordinate and y-\/coordinate location. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a587e07a61712e5ebddaa8e1d6fc75c40}\label{class_opponent_a587e07a61712e5ebddaa8e1d6fc75c40}} 
+void \mbox{\hyperlink{class_opponent_a587e07a61712e5ebddaa8e1d6fc75c40}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates all information (location, status, etc.) associated wit the opponent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a1dae0032293c8f902aeda50e181ebc11}\label{class_opponent_a1dae0032293c8f902aeda50e181ebc11}} 
+void \mbox{\hyperlink{class_opponent_a1dae0032293c8f902aeda50e181ebc11}{set\+X\+Location}} (float newX)
+\begin{DoxyCompactList}\small\item\em Sets the x-\/coordinate location for the opponent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a11e1ae439fff02f56d9de8bfe1e972bb}\label{class_opponent_a11e1ae439fff02f56d9de8bfe1e972bb}} 
+void \mbox{\hyperlink{class_opponent_a11e1ae439fff02f56d9de8bfe1e972bb}{set\+Y\+Location}} (float newY)
+\begin{DoxyCompactList}\small\item\em Sets the y-\/coordinate location for the opponent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a176105270c8cd55066c292bfc243eaf5}\label{class_opponent_a176105270c8cd55066c292bfc243eaf5}} 
+float \mbox{\hyperlink{class_opponent_a176105270c8cd55066c292bfc243eaf5}{get\+X\+Location}} ()
+\begin{DoxyCompactList}\small\item\em Gets the x-\/coordinate location for the opponent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a8296b6e6eb187b2215cc12be5a2a9dc4}\label{class_opponent_a8296b6e6eb187b2215cc12be5a2a9dc4}} 
+float \mbox{\hyperlink{class_opponent_a8296b6e6eb187b2215cc12be5a2a9dc4}{get\+Y\+Location}} ()
+\begin{DoxyCompactList}\small\item\em Gets the y-\/coordinate location for the opponent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a1e7ef1dff046396445b8a04842493136}\label{class_opponent_a1e7ef1dff046396445b8a04842493136}} 
+float \mbox{\hyperlink{class_opponent_a1e7ef1dff046396445b8a04842493136}{get\+Opponent\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em Gets the speed that opponent should move per frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a6b828d4aca39ce5a4866fba69448c4be}\label{class_opponent_a6b828d4aca39ce5a4866fba69448c4be}} 
+void \mbox{\hyperlink{class_opponent_a6b828d4aca39ce5a4866fba69448c4be}{set\+Opponent\+Speed}} (float new\+Speed)
+\begin{DoxyCompactList}\small\item\em Sets the speed that opponent should move per frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a2783d2937ffd00118285262932bf79ef}\label{class_opponent_a2783d2937ffd00118285262932bf79ef}} 
+void \mbox{\hyperlink{class_opponent_a2783d2937ffd00118285262932bf79ef}{check\+X\+Collision}} ()
+\begin{DoxyCompactList}\small\item\em Determines if the x-\/coordinate location could indicate a collision with the main character. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_abd19c62a450bc94eb804e80607343e46}\label{class_opponent_abd19c62a450bc94eb804e80607343e46}} 
+void \mbox{\hyperlink{class_opponent_abd19c62a450bc94eb804e80607343e46}{check\+Y\+Collision}} ()
+\begin{DoxyCompactList}\small\item\em Determines if the y-\/coordinate location could indicate a collision with the main character. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a8a1561e37bf1b3f6b128604d213acbcb}\label{class_opponent_a8a1561e37bf1b3f6b128604d213acbcb}} 
+void \mbox{\hyperlink{class_opponent_a8a1561e37bf1b3f6b128604d213acbcb}{check\+Ceiling\+Collision}} ()
+\begin{DoxyCompactList}\small\item\em Determines if the location of the opponent has come in contact with the bounds of the S\+DL window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_ac80e4fa393e2efee2816b87ddff16c0c}\label{class_opponent_ac80e4fa393e2efee2816b87ddff16c0c}} 
+int \mbox{\hyperlink{class_opponent_ac80e4fa393e2efee2816b87ddff16c0c}{get\+X\+Index}} ()
+\begin{DoxyCompactList}\small\item\em Gets the X-\/index of the opponent in the 2D-\/grid dependent on its x-\/coordinate location. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a1432ead4e3f9a7d1c2b0e5f9186d6f5b}\label{class_opponent_a1432ead4e3f9a7d1c2b0e5f9186d6f5b}} 
+int \mbox{\hyperlink{class_opponent_a1432ead4e3f9a7d1c2b0e5f9186d6f5b}{get\+Y\+Index}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Y-\/index of the opponent in the 2D-\/grid dependent on its y-\/coordinate location. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a09b3060f1b6679354014834ab3bcb753}\label{class_opponent_a09b3060f1b6679354014834ab3bcb753}} 
+void \mbox{\hyperlink{class_opponent_a09b3060f1b6679354014834ab3bcb753}{set\+X\+Index}} (int new\+Index)
+\begin{DoxyCompactList}\small\item\em Sets the X-\/index of the opponent in the 2D-\/grid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a6b77c2017c07140b8e61849c11cbc8a5}\label{class_opponent_a6b77c2017c07140b8e61849c11cbc8a5}} 
+void \mbox{\hyperlink{class_opponent_a6b77c2017c07140b8e61849c11cbc8a5}{set\+Y\+Index}} (int new\+Index)
+\begin{DoxyCompactList}\small\item\em Sets the Y-\/index of the opponent in the 2D-\/grid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_ab0926a92060184ec56f113e4ea15dbf8}\label{class_opponent_ab0926a92060184ec56f113e4ea15dbf8}} 
+float \mbox{\hyperlink{class_opponent_ab0926a92060184ec56f113e4ea15dbf8}{get\+OriginalX}} ()
+\begin{DoxyCompactList}\small\item\em Gets the x-\/coordinate location that the opponent started at. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_affece97ea4c974ac1652e5d778f28ba7}\label{class_opponent_affece97ea4c974ac1652e5d778f28ba7}} 
+float \mbox{\hyperlink{class_opponent_affece97ea4c974ac1652e5d778f28ba7}{get\+OriginalY}} ()
+\begin{DoxyCompactList}\small\item\em Gets the y-\/coordinate location that the opponent started at. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a4f0c93f21672de8421104d4853c1f48e}\label{class_opponent_a4f0c93f21672de8421104d4853c1f48e}} 
+void \mbox{\hyperlink{class_opponent_a4f0c93f21672de8421104d4853c1f48e}{set\+OriginalX}} (float x)
+\begin{DoxyCompactList}\small\item\em Sets the x-\/coordinate location that the opponent should start at. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opponent_a420d01564fa488aa190587d501e33fe9}\label{class_opponent_a420d01564fa488aa190587d501e33fe9}} 
+void \mbox{\hyperlink{class_opponent_a420d01564fa488aa190587d501e33fe9}{set\+OriginalY}} (float y)
+\begin{DoxyCompactList}\small\item\em Sets the y-\/coordinate location that the opponent should start at. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_opponent_a42f17fb8f71af0b11fb20b900adf4f43}\label{class_opponent_a42f17fb8f71af0b11fb20b900adf4f43}} 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_opponent_a42f17fb8f71af0b11fb20b900adf4f43}{opponent\+Vector}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_vector2_d}{Vector2D}} class associated with the opponent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents what would be the opponents or other characters in a game. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Opponent.\+h\end{DoxyCompactItemize}
