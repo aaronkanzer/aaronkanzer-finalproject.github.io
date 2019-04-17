@@ -92,9 +92,9 @@
 								</header>
 								<p><b>Asteroids Game: </b>This is a simple implementation of the classic Asteroids game. The user can achieve a high score. The game ends once a collision occurs between the main character and any of the opponents.</p>
 
-								<br><br>
+								<br>
 								<p><b>Spatial Partitioning Demo: </b> This component is used to display how many game objects occupy certain areas of the game scene. It renders the numbers in each square in the grid dynamically as objects pass through. The green grid that surrounds the main character is meant to represent a range in which it could possibly interact with the current scene. A key element of spatial partitioning is emphasizing elements closer to the main character -- this helps with overall performance.</p>
-								<br><br>
+								<br>
 								<p><b>Editor Component: </b> This part of the project allows the user to drag and drop the location of any of the opponents. Both of the other components will then operate with the opponents in their new given locations.</p>
 						
 						</section>
@@ -114,9 +114,11 @@
 							<section id="fourth" class="main special">
 								<header class="major">
 									<h2>Explanation of Spatial Partitioning</h2>
-									<h3><b>What is it? Why it matters?</b></h3>
+									<h3><b>What is it? Why it matters? How does this demo convey it?</b></h3>
 								</header>
-								<p>
+								<p>Spatial partitioning is a method used in games to efficiently store and evaluate data based on their locations. It can greatly assist with performance, as more emphasis can be put on objects closer to the main focal point of the game, giving the user a better experience.<br>
+									<br>In games, spatial partitioning is implemented using specific data structures, such as grids (2D arrays), quadtrees (nodes with 4 children), or binary space partitioning trees (BSPs operate with a nearest-neighbor type behavior). By having the location of objects organized in a well-structured manner, updates and events can be prioritized in which are closer to the main character. In general, this can minimize the complexity of updating the game, as travesing relevant objects can occur faster.
+									<br>My demo uses a grid-like data structure to show how many objects are located within a certain index at a certain time. The main character has an arbitrary sized green box around it, symbolizing the potential surrounding distance that could be relevant at a given time as the character moves. Since this visualization is able to record the given number of objects in a location at a time, the code could be modified and used within a game to further implement aspects of spatial partitioning. 
 									</p>
 							</section>
 						
